@@ -25,6 +25,7 @@ public class Steps {
 	@When("User opens URL {string}")
 	public void user_opens_URL(String url) {
 		driver.get(url);
+		System.Out.Println(driver.getTitle());
 	}
 
 	@When("User enters Email as {string} and password as {string}")
